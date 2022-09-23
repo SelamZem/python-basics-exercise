@@ -1,0 +1,50 @@
+#print the first 10 natural number using while loop
+def ten():
+  i = 1
+  while(i<=10):
+    print(i)
+    i+=1
+ten()
+
+#print  pattern 0
+def pattern(row, col):
+  for i in range(row) :
+    for j in range(col):
+        print("#", end=" ")
+    print()
+
+a=int(input("enter number of rows " ))
+b=int(input("enter number of columns "))
+pattern(a,b)
+
+#print pattern 1
+#print square
+def square(number):
+  for i in range(number):
+    for j in range(number):
+      print("@", end=" ")
+    print()
+a=int(input("enter a number "))
+square(a)
+
+#print rightangle triangle in leftdown corner 2
+def trild(number):
+  for i in range(number):
+    for j in range(number):
+      if i>=j:
+        print("@", end=" ")
+    print()
+a=int(input("enter a number "))
+trild(a)
+
+#print rightangle triangle in rightdown corner3
+def trird(number):
+  for i in range(number, -1, -1): #counts the loop down
+    for j in range(number):
+      if j>=i:
+        print("@", end=" ")
+      else:
+        print(" ", end=" ")
+    print()
+a=int(input("enter a number "))
+trird(a)
